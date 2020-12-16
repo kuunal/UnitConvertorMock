@@ -5,6 +5,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  font-family: "Roboto";
 }
 
 select,
@@ -20,13 +21,14 @@ option {
 .container {
   border: 1px solid gainsboro;
   height: 250px;
+  width: 70%;
   margin-top: 10%;
-  width: 70vw;
-  border-radius: 2px;
+  border-radius: 15px;
 }
 
 .container > * {
-  margin: 5%;
+  margin: 3%;
+  margin-left: 1%;
 }
 
 .unit-container {
@@ -39,6 +41,7 @@ option {
 .inner-boxes {
   flex-wrap: wrap;
   display: flex;
+  width: 64%;
 }
 
 .box {
@@ -46,9 +49,9 @@ option {
 }
 
 #unit {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
   padding: 6px;
-  width: 74%;
+  width: 64%;
 }
 
 .dropdown {
@@ -59,34 +62,22 @@ option {
 
 select {
   padding: 6px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
   width: 100%;
 }
 
 .box > input {
+  width: 100%;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
+  line-height: 22px;
   padding-bottom: 50px;
   text-align: center;
 }
 
-.equal {
+@media (max-width: 1000px) {
+  .container {
+    margin: 10% 1%;
+  }
 }
-
-/* 
-.container {
-  margin-top: 15%;
-}
-
-.jumbotron {
-  background-color: white;
-  border: 1px solid gainsboro;
-}
-
-.box {
-}
-
-.row > * {
-  border: 1px solid gainsboro;
-} */
